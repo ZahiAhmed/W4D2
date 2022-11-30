@@ -8,11 +8,9 @@ class Manager < Employee
     end
 
     def add_employee(employee)
-        # p self
-        # p employee.boss
-        # if self == employee.boss
+        if self.name == employee.boss
             @employees << employee
-        # end 
+        end 
     end
 
     def bonus(multiplier)
